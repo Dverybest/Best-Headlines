@@ -11,7 +11,7 @@ const Articles = ({url,header}) => {
     const fectchData = () => {
         axios.get(url)
             .then(res => {
-                console.log('respones', res.data)
+                //console.log('respones', res.data)
                 setArticles(res.data.articles)
             })
             .catch(err => {
