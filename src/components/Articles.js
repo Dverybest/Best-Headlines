@@ -4,7 +4,7 @@ const Articles = ({url,header}) => {
 
     useEffect(() => {
         fectchData();
-    }, [])
+    })
 
     const [articles, setArticles] = useState([]);
     const [isLoading,setIsLoading] = useState(true);

@@ -8,10 +8,18 @@ body {
   min-height: 100vh;
   position: relative;
   margin: 0;
+  overflow-x: hidden;
+  padding-right: 0;
+  padding-left: 0;
   padding-bottom: 50px;
 }
 
-
+.container-fluid{
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -33,9 +41,10 @@ display: flex;
 flex-direction: column;
 } */
 footer {
-
   height: 50px;
   position: absolute;
+  padding: 0;
+  margin: 0;
   bottom:0;
 }
 .articles{
