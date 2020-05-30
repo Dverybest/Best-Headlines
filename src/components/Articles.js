@@ -2,24 +2,24 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 const Articles = ({url,header}) => {
 
-    useEffect(() => {
-        fectchData();
-    })
-
     const [articles, setArticles] = useState([]);
     const [isLoading,setIsLoading] = useState(true);
     const fectchData = () => {
         axios.get(url)
             .then(res => {
+                console.log('done')
                 setArticles(res.data.articles)
             })
             .catch(err => {
-                console.log(err)
+               // console.log(err)
             })
             .finally(()=>{
                 setIsLoading(false)
             })
     }
+    useEffect(() => {
+        fectchData();
+    })
 
     const articlesList = articles.length!==0 ? (
         articles.map((article, index) => {
