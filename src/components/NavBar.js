@@ -4,7 +4,7 @@ import {Link, withRouter } from 'react-router-dom';
 const NavBar = () => {
 
     return (
-        <nav className="navbar navbar-expand-sm navb" style={{background:'#6d0000'}}>
+        <nav className="navbar navbar-expand-sm navb mx-0" style={{background:'#6d0000'}}>
             <div>
                 <Link to='/Best-Headlines' className="navbar-brand">Best-Headlines</Link>
             </div>

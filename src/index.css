@@ -1,29 +1,22 @@
+html{
+  scroll-behavior: smooth;
+    margin: 0;
+  padding: 0;
+  width: 100vw;
+}
 body {
   margin: 0;
+  padding: 0;
+  width: 100vw;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  position: relative;
-  margin: 0;
-  overflow-x: hidden;
-  padding-right: 0;
-  padding-left: 0;
   padding-bottom: 50px;
 }
 
-.container-fluid{
-  padding-right: 0;
-  padding-left: 0;
-  margin-right: auto;
-  margin-left: auto;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 .navb a{
   color: #ffffff;
 }
@@ -41,11 +34,13 @@ display: flex;
 flex-direction: column;
 } */
 footer {
+  position: fixed;
   height: 50px;
-  position: absolute;
-  padding: 0;
-  margin: 0;
   bottom:0;
+  left: 0;
+  right: 0;
+  background-color: #6d0000;
+    color: #ffffff;
 }
 .articles{
   color: #6d0000;

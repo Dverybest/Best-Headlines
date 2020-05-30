@@ -11,7 +11,6 @@ const Articles = ({url,header}) => {
     const fectchData = () => {
         axios.get(url)
             .then(res => {
-                //console.log('respones', res.data)
                 setArticles(res.data.articles)
             })
             .catch(err => {
@@ -25,7 +24,7 @@ const Articles = ({url,header}) => {
     const articlesList = articles.length!==0 ? (
         articles.map((article, index) => {
             return (
-                <div className="post card" key={index}>
+                <div className="post card mx-1" key={index}>
                     {/* <img src={Pokeball} alt="A pokaball" /> */}
                     <div className="card-body row align-items-center">
                         {/* <Link to={`/${index}`}> */}
@@ -50,8 +49,8 @@ const Articles = ({url,header}) => {
             <h2 className="text-center articles">{header}</h2>
             {
                 isLoading?(
-                    <div className="container h-100">
-                        <div className="row h-100 align-items-center justify-content-center">
+                    <div className="container px-0">
+                        <div className="row px-0 mx-0 align-items-center justify-content-center">
 
                         <div className="spinner-border text-primary"></div>
                         </div>

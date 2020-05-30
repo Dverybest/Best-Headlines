@@ -11,7 +11,7 @@ const NewsCategory = (props) => {
     //if purposely remove api key
     return (
         <Articles
-            url={`https://newsapi.org/v2/top-headlines?country=ng&category=${category}&apiKey=`}
+            url={`https://newsapi.org/v2/top-headlines?country=ng&category=${category}&apiKey=` + process.env.REACT_APP_API_KEY}
             header={`${ capitalizeFirstLetter(category)} Headlines`}
         />
     )

@@ -4,7 +4,7 @@ const Entertainment = () => {
 //if purposely remove api key
     return (
         <Articles
-            url={"https://newsapi.org/v2/top-headlines?country=ng&category=entertainment&apiKey="}
+            url={"https://newsapi.org/v2/top-headlines?country=ng&category=entertainment&apiKey=" + process.env.REACT_APP_API_KEY}
             header={"Entertainment Headlines"}
         />
     )
